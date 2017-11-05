@@ -1,7 +1,6 @@
-# ss
 ======================================================
 安装ss
-wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-go.sh
+wget --no-check-certificate -O shadowsocks-go.sh https://github.com/673tong/ss/blob/master/shadowsocks-go.sh
 chmod +x shadowsocks-go.sh
 ./shadowsocks-go.sh 2>&1 | tee shadowsocks-go.log
 
@@ -10,28 +9,13 @@ chmod +x shadowsocks-go.sh
 配置文件路径：vim /etc/shadowsocks/config.json
 {
     "port_password":{
-         "7373":"ss73tong",
-         "1567":"73tong",
-         "8899":"lijinhui",
-         "5473":"73tong",
-		 "5411":"yanjian"
+         "端口1":"密码",
+         "端口2":"密码"
+
     },
     "method":"aes-256-cfb",
     "timeout":600
 }
-
-多用户
-配置文件路径：vim /etc/shadowsocks/config.json
-{
-    "port_password":{
-         "8989":"qwerasdf",
-         "7373":"73tong",
-         "6666":"lijinhui"        	
-    },
-    "method":"aes-256-cfb",
-    "timeout":600
-}
-
 使用命令：
 启动：/etc/init.d/shadowsocks start
 停止：/etc/init.d/shadowsocks stop
