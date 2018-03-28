@@ -1,6 +1,6 @@
 ======================================================
 安装ss
-wget --no-check-certificate -O shadowsocks-go.sh https://github.com/673tong/ss/blob/master/shadowsocks-go.sh
+wget --no-check-certificate -O shadowsocks-go.sh https://raw.githubusercontent.com/673tong/ss/master/shadowsocks-go.sh
 chmod +x shadowsocks-go.sh
 ./shadowsocks-go.sh 2>&1 | tee shadowsocks-go.log
 
